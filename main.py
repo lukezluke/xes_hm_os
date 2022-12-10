@@ -41,7 +41,6 @@ sensor.btnTrig['left'] = left_pressed
 sensor.btnTrig['right'] = right_pressed
 sensor.btnTrig['a'] = a_pressed
 sensor.btnTrig['b'] = b_pressed
-
 sensor.startSchedule()
 
 #启动画面
@@ -53,3 +52,12 @@ screen.drawRect(90,60,10,10,7)
 screen.drawRect(80,70,10,10,7)
 screen.drawRect(70,80,10,10,7)
 screen.drawRect(60,90,10,10,7)
+sleep(3)
+
+#欢迎
+screen.fill((168,218,241))
+screen.text("welcome!",30,30)
+sleep(3)
+
+#主界面
+screen.fill((168,218,241))
