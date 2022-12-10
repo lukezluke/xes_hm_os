@@ -43,3 +43,13 @@ sensor.btnTrig['a'] = a_pressed
 sensor.btnTrig['b'] = b_pressed
 
 sensor.startSchedule()
+
+#启动画面
+screen.fill((0, 0, 0))
+screen.drawRect(50,50,60,10,7)
+screen.drawRect(50,50,10,60,7)
+screen.drawRect(50,100,60,10,7)
+screen.drawRect(90,60,10,10,7)
+screen.drawRect(80,70,10,10,7)
+screen.drawRect(70,80,10,10,7)
+screen.drawRect(60,90,10,10,7)
