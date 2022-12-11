@@ -61,3 +61,11 @@ sleep(3)
 
 #主界面
 screen.fill((168,218,241))
+screen.text("Ready",0,0)
+
+while True:
+    screen.fill((168,218,241))
+    screen.text("Ready",0,0)
+    if buttons != 0:
+        screen.text("pressed",10,0)
+        screen.text("{text}"format(text=buttons),20,10)
