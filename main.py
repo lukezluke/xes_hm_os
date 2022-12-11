@@ -63,9 +63,18 @@ sleep(3)
 screen.fill((168,218,241))
 screen.text("Ready",0,0)
 
-while True:
-    screen.fill((168,218,241))
-    screen.text("Ready",0,0)
-    if buttons != 0:
-        screen.text("pressed",10,0)
-        screen.text("{text}"format(text=buttons),20,10)
+if buttons == 1:
+    while True:
+        screen.fill((168,218,241))
+        screen.text("buttons test",10,0)
+        if buttons != 0:
+            screen.text("pressed:",10,10)
+            screen.text("the {text} button is pressed"format(text=buttons),10,20)
+elif buttons == 2:
+    while True:
+        screen.fill((168,218,241))
+        screen.text("file test",10,0)
+        fi = read("file.txt","r")
+        li = fi.readlines()
+        screen.text("file:",10,10)
+        screen.text(li,10,20)
