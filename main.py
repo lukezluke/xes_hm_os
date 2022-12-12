@@ -62,7 +62,7 @@ sleep(3)
 #主界面
 screen.fill((168,218,241))
 screen.text("Ready",0,0)
-
+'''
 if buttons == 1:
     while True:
         screen.fill((168,218,241))
@@ -77,4 +77,4 @@ elif buttons == 2:
         fi = read("file.txt","r")
         li = fi.readlines()
         screen.text("file:",10,10)
-        screen.text(li,10,20)
+        screen.text(li,10,20)'''
